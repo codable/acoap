@@ -14,3 +14,6 @@ add_library(libacoap
   src/coap.cpp
   src/coap_header.cpp
 )
+
+add_executable(server examples/apps/echo/server.cpp)
+target_link_libraries(server libacoap)
